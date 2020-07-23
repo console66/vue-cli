@@ -20,7 +20,7 @@ const config = {
         },
     },
     // 测试打包配置
-    test: {
+    buildTest: {
         publicPath: './',
         assetsDir: 'static',
         lintOnSave: false,
@@ -46,7 +46,7 @@ const config = {
 
     },
     // 生产打包配置
-    production: {
+    build: {
         publicPath: './',
         assetsDir: 'static',
         productionSourceMap: false,
@@ -67,5 +67,5 @@ const config = {
         },
     }
 }
-console.log(process.env.NODE_ENV)
-module.exports = config[process.env.NODE_ENV];
+console.log(process.env.VUE_APP_MODE)
+module.exports = config[process.env.VUE_APP_MODE];

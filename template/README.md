@@ -1,4 +1,4 @@
-# m5_pad_order
+# {{name}}
 
 ## Project setup
 ```
